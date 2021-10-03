@@ -1,0 +1,202 @@
+body{
+    background-image: url("./images/pattern.png");
+    background-size: 150px 150px;
+    background-color: #a3a3a3;
+    /* 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Cafe24SsurroundAir';
+}
+span{ margin: 0px 5px;}
+/* 기본 레이아웃 */
+.bookcover{
+    background-color:rgb(34, 86, 138);
+    border-radius: 10px;
+    width: 1470px;
+    height: 970px;
+    margin: 100px auto;
+    position: relative;
+}
+.bookdot{
+    border: 3px dashed white;
+    border-radius: 10px;
+    padding: 15px;
+
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+    
+}
+.page{
+    background-color:floralwhite;
+    border-radius: 10px;
+    padding: 15px 15px;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* 홈 레이아웃 - container */
+.profile-container{
+    display: flex;
+    flex: 0.2;
+    flex-direction: column;
+    
+    margin: 10px auto;
+    padding: 5px;
+}
+.content-container{
+    z-index: 2;
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+    
+    margin: 5px auto;
+    padding: 10px 0px 10px 10px;
+}
+/* 메뉴바 */
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    
+    margin-top: 4rem;
+    padding: 10px 0;
+    width: fit-content;
+    height: max-content;
+    position: relative;
+    right: 1.3%;
+}
+.menu-container a{
+    z-index: 1;
+    margin: 10px 0;
+    padding: 8px 4px; 
+    background-color: cornflowerblue;
+    border-radius: 7px;
+
+    font-size: 1.2rem;
+    font-family: 'Cafe24SsurroundAir';
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+a:hover{
+    background-color:rgb(56, 87, 179);
+}
+a:active{
+    background-color: darkblue;
+}
+
+/* 홈 레이아웃 - box */
+.box{
+    padding: 15px;
+    border: 1px solid #cfcbcb;
+    border-radius: 10px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: start;
+}
+.profile-container > .box{
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-container > .box{
+    align-items: unset;
+    position: relative;
+}
+
+/* 홈 레이아웃 - header */
+.profile-header{
+    flex: 0.1;
+    text-align: center;
+}
+.content-header{
+    flex: 0.1;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+#title{
+    font-family: 'SF_IceMango';
+    font-size: 1.75em;
+}
+#address{ font-style: italic;}
+
+/* 프로필 구성 */
+.profile-image{
+    flex: 0.4;
+    height: 280px;
+    padding: 5px;
+}
+.profile-intro{
+    flex: 1;
+    text-align: center;
+    font-size: 1.25em;
+}
+/* 파도타기 버튼 */
+.waves-box{
+    padding: 5px;
+    width: 70%;
+    background-color: cornflowerblue;
+    border-radius: 5px;  
+    text-align: center;
+    position: relative; 
+
+}
+.waves-btn{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.waves-title{
+    font-family: 'SF_IceMango';
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid white;
+  }
+.waves-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.waves-box:hover > .waves-content{
+    border: 3px solid white;
+    border-top: none;
+    background-color: gray;
+    display: block;
+}
+.waves-content > a {   
+    display: block;
+    width: 100%;
+    padding:5px 0px;
+    text-decoration-line: none;
+    font-size: 1.3em;
+    color: white;
+}
+.waves-content >a:hover{
+    background-color:rgb(56, 87, 179);
+}

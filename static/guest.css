@@ -1,0 +1,60 @@
+/* 모각코 13일차 guest stylesheet */
+
+.guest-scroll{
+    width: 100%;
+    height: 700px;
+    overflow-y: scroll;
+    
+    display: flex;
+    flex-direction: column;
+}
+.guest-box{
+    margin: 0.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.guest-title{
+    background-color:rgb(250, 237, 209);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}    
+
+.guest-name{
+    font-family: 'SF_IceMango';
+    font-size: 1.8rem;
+}
+.guest-date{
+    float: right;
+    font-style: italic;
+}
+.guest-profile{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.guest-image{
+    background-image: url(./images/stamp.png);
+    background-size: 300px 260px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.4;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+#apple{
+    background-size: 300px 210px;
+}
+.guest-image > img{
+    width: 90%;
+    height: 90%;
+}
+.guest-comment{
+    flex : 0.6;
+    font-size: 1.3em;
+    line-height: 2rem;
+}
+

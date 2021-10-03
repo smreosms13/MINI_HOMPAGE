@@ -1,0 +1,12 @@
+/* 반응형 웹페이지 media */
+@media ( max-width: 1025px ) {
+    .bookcover {
+      width: auto;
+    }
+    .page {
+      width: auto;
+    }
+    .box .profile-container .content-container .menu-container{
+        width: auto;
+    }
+}

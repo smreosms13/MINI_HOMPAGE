@@ -1,0 +1,36 @@
+
+/* 미니홈피  웹 폰트 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF_IceMango';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceMango.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+em{font-style: unset;}
+/* 글씨 색상 */
+.color-red{
+    color: red;
+    font-weight: bold;
+}
+.color-coral{
+    color: coral;
+    font-weight: bold;
+}
+.color-blue{
+    color:cornflowerblue;
+    font-weight: bold;
+}
+.color-purple{
+    color:purple;
+    font-weight: bold;
+}
+.color-yellow{
+    color: rgb(243, 196, 76);
+    font-weight: bold;
+}

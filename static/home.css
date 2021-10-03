@@ -1,0 +1,45 @@
+/* 메인 home content 구성 */
+.content-box
+{
+    width:100%;
+    height:max-content;
+    margin-bottom: 10px;
+}
+.content-line{
+    margin-top: 0;
+}
+.content-name{
+    color: rgb(34, 86, 138);
+    font-family: 'SF_IceMango';
+    font-size: 2.5rem;
+}
+.content-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.playlist-box1{
+    flex : 0.45; 
+    font-size: 17px;
+}
+.playlist-box2{flex : 0.55;}
+.tag{
+    background-color: dodgerblue;
+    color: whitesmoke;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.playlist{ 
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+#playground{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#playground>img{
+    width : 100%;
+    height: 90%;
+    position: absolute;
+}
